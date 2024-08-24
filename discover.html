@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main.discover-page {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.featured-items,
+.genre-list,
+.new-releases-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.featured-item,
+.genre,
+.new-release {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featured-item img,
+.genre img,
+.new-release img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.featured-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.featured-item:hover {
+    transform: translateY(-5px);
+}
+
+.featured-item img {
+    width: 5%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.featured-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.featured-item p {
+    color: #888;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover-page">
+        <section class="featured">
+            <h1>Featured Music</h1>
+            <!-- Display featured albums, playlists, or tracks -->
+            <div class="featured-items">
+                <!-- Example featured item -->
+                <div class="featured-item">
+                    <img src="https://img.freepik.com/free-photo/cartoon-style-music-concept_23-2151056744.jpg?t=st=1714367256~exp=1714370856~hmac=7e6c89f2812cdb2b1737b95b56756a4171f40c04261786864535f0d2f9195fd4&w=1380" alt="Featured Album">
+                    <h3>Featured Album Title</h3>
+                    <p>Artist Name</p>
+                </div>
+                <!-- Add more featured items as needed -->
+            </div>
+        </section>
+
+        <section class="genres">
+            <h2>Explore Genres</h2>
+            <!-- Display popular genres for users to explore -->
+            <div class="genre-list">
+                <div class="genre">
+                    <img src="genre1.jpg" alt="Genre Image">
+                    <h3>Genre 1</h3>
+                </div>
+                <div class="genre">
+                    <img src="genre2.jpg" alt="Genre Image">
+                    <h3>Genre 2</h3>
+                </div>
+                <!-- Add more genres as needed -->
+            </div>
+        </section>
+
+        <section class="new-releases">
+            <h2>New Releases</h2>
+            <!-- Display recently released albums or tracks -->
+            <div class="new-releases-list">
+                <!-- Example new release -->
+                <div class="new-release">
+                    <img src="new_album.jpg" alt="New Album">
+                    <h3>New Album Title</h3>
+                    <p>Artist Name</p>
+                </div>
+                <!-- Add more new releases as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Spotify Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
